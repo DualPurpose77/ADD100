@@ -1,0 +1,34 @@
+"""
+-----------------------------------------------------------------------
+ASSIGNMENT REQUIREMENTS
+-----------------------------------------------------------------------
+[ ] 1. Header Docstring included (Assignment Name, Date, File Name).
+[ ] 2. Program asks for at least 5 different inputs (variables).
+[ ] 3. Output uses F-Strings to combine text and variables.
+[ ] 4. Output uses at least one escape sequence (\n or \t).
+[ ] 5. Code contains comments explaining the steps.
+[ ] 6. Program runs without errors.
+-----------------------------------------------------------------------
+"""
+
+#1. Create a Docstring that includes Assignment Name, Date and File Name
+"""
+Assignment: Mad Libs
+Date: 1/22/2026
+File: Madlibs.py
+"""
+#2. Get info from user and save it in the variable
+name = input("Please enter a name: ")
+food = input("Please enter a food: ")
+pet = input("Please enter an animal: ")
+place = input("Please enter a place: ")
+day = input("Please enter a day: ")
+
+#3. Combine variables into a F-Strings to create an Output
+print(f"{name} was eating {food} with their pet {pet}.")
+
+#4. This Output uses an escape sequence
+print(f"\n{name} did this at the {place} on {day}.")
+
+#5. Each step has comments!
+#6. Ran twice without errors!
