@@ -14,7 +14,26 @@ Please ensure your code meets the following before submitting:
 -----------------------------------------------------------------------
 """
 
+# 1. Header Docstring included
 '''
 Assignment: RPG Character Profile
 Date: 1/22/2026
 File: rpgcharacter.py
+'''
+
+# 2. Have the user input a String variable as a character name
+name = str(input("What is your character's name? "))
+
+# 3. Have the user input an Integer variable as a level
+level = int(input("What is your character's level? "))
+
+# 4. Have the user input a Float variable as money
+money = float(input("How much money does your character have? "))
+
+# 5. Have the user input a Boolean variable as an alive state
+is_alive = bool(input("Is your character alive? (True/False): "))
+
+# 6. Print all variables using F-strings
+print(f"Your character, {name}, is level {level} as of now.")
+print(f"\nAbout ${money: ,.2f} is in {name}'s inventory.")
+print(f"\nIs {name} currently alive? {is_alive}.")
