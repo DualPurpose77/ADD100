@@ -1,0 +1,39 @@
+"""
+-----------------------------------------------------------------------
+ASSIGNMENT: 3B - The Buffet Calculator
+DATE: [Insert Date]
+FILE: buffet.py
+-----------------------------------------------------------------------
+REQUIREMENTS:
+1. Ask user for their age (convert to int).
+2. Use if/elif/else to determine price:
+   - Under 1: FREE ($0.00)
+   - 1 to 11: $1.00 per year of age (Example: 5 years = $5.00)
+   - 12 to 64: $16.95 (Standard Adult)
+   - 65 and older: $12.95 (Senior Discount)
+3. Print the final price formatted as currency (e.g., $16.95).
+-----------------------------------------------------------------------
+"""
+
+# Header Docstring included
+'''
+Assignment: The Buffet Calculator
+Date: 1/29/2026
+File: buffetcalculator.py
+'''
+
+# 1. Ask user for their age as an Integer value
+age = int(input("What is your age in years? "))
+
+# 2. Use If/Elif/Else functions to determine prices
+if age < 1: 
+    price = 0.00
+elif 1 <= age <= 11:
+    price = age * 1.00
+elif 12 <= age <= 64: 
+    price = 16.95
+else : 
+    price = 12.95
+
+# 3. Print the final price formatted as a currency
+print(f"You will have to pay ${price: ,.2f} to enter the buffet.")
