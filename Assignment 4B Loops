@@ -1,0 +1,42 @@
+"""
+-----------------------------------------------------------------------
+ASSIGNMENT REQUIREMENTS
+-----------------------------------------------------------------------
+[ ] 1. Header Docstring included.
+[ ] 2. Task 1: While Loop (The Nagging Kid)
+       - Repeats "Are we there yet?" until user types "yes".
+       - Uses a boolean variable to control the loop.
+[ ] 3. Task 2: For Loop (99 Bottles of Beer)
+       - Counts backwards from 99 to 1.
+       - Prints "[number] bottles of beer on the wall!"
+[ ] 4. Upload to GitHub and paste the link below.
+-----------------------------------------------------------------------
+"""
+# 1. Header Docstring included!
+'''
+Assignment: The Nag & The Song
+Date: 2/5/2026
+File: loops.py
+'''
+
+# 2. Task 1 involves making a While loop that repeatively prints a message until the user types in "yes"
+there = False
+while there != True: 
+    print("A minute passes...")
+    answer = input("Are we there yet? (yes/no): ")
+    if answer == "yes" or answer == "Yes":
+        there = True 
+        print("Oh boy, I'm so happy I can sing a song!")
+
+# 3. Task 2 involves making a For loop that repeats and counts backwards from 99 to 1. 
+for i in range(99, 0, -1):
+    if i == 1:
+        print(f"{i} bottle of beer on the wall, {i} bottle of beer!")
+        print("Take one down and pass it around, no more bottles of beer on the wall!")
+        print("No more bottles of beer on the wall, no more bottles of beer!")
+        print("Go to the store and by some more, 99 bottles of beer on the wall!")
+    else:
+        print(f"{i} bottles of beer on the wall, {i} bottles of beer!")
+        print(f"Take one down, and pass it around, {i - 1} bottles of beer on the wall!")
+    
+# 4. Upload to Github and submit the link!
