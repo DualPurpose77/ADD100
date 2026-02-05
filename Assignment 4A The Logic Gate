@@ -1,0 +1,71 @@
+"""
+-----------------------------------------------------------------------
+ASSIGNMENT REQUIREMENTS
+-----------------------------------------------------------------------
+[ ] 1. Header Docstring included with your name.
+[ ] 2. Ask user for two integers (num1 and num2).
+[ ] 3. Perform 6 logical checks: (Both > 0, Both > 100, Either Even, Either < 100, Not Equal, Not Zero).
+[ ] 4. Use if/elif/else to categorize num1 (Positive/Negative/Zero).
+[ ] 5. Code is clean and uses descriptive variable names.
+[ ] 6. Upload to GitHub and paste the link below.
+-----------------------------------------------------------------------
+"""
+# 1. Header Docstring included!
+'''
+Assignment: The Logic Gate
+Date: 2/5/2026
+File: logic.py
+Name: Victor Q. 
+'''
+
+# 2. Ask the user for two integers
+num1 = int(input("Please enter an integer: "))
+num2 = int(input("Please enter another integer: "))
+
+# 3. Run 6 logic checks
+# Check 1: Both integers are greater than 0
+if num1 > 0 and num2 > 0:
+    print("Both of these numbers are greater than 0")
+else: 
+    print("One of these numbers is less than 0")
+
+# Check 2: Both integers are greater than 100
+if num1 > 100 and num2 > 100:
+    print("Both of these numbers are greater than 100")
+else:
+    print("One of these numbers is less than 100")
+
+# Check 3: Either integer is an Even number
+if num1 % 2 == 0 or num2 % 2 == 0:
+    print("One of these numbers is an Even number")
+else:
+    print("Both of these numbers are Odd numbers")
+
+# Check 4: Either integer is less than 100
+if num1 < 100 or num2 < 100:
+    print("One of these numbers is less than 100")
+else: 
+    print("Both of these numbers are greater than 100")
+
+# Check 5: Are the integers not equal to each other
+if not num1 == num2: 
+    print("These numbers are not the same")
+else: 
+    print("These numbers are the same")
+
+# Check 6: Are the integers both not zero
+if not (num1 == 0 and num2 == 0):
+    print("One of these numbers is not equal to 0")
+else:
+    print("Both of these numbers are equal to 0")
+
+# 4. Use if/elif/else functions to catergorize the first integer
+if num1 > 0:
+    print(f"{num1} is a positive number!")
+elif num1 < 0:
+    print(f"{num1} is a negative number!")
+else:
+    print(f"{num1} is a zero!")
+
+# 5. Code is clean and uses descriptive variable names!
+# 6. Upload to GitHub and submit the link!
